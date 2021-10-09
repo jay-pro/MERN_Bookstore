@@ -1,14 +1,15 @@
 import React from "react";
 import Products from "../products/products";
 import { Row, Col } from "react-bootstrap";
+import ProductScreen from "./ProductScreen";
 
 function HomeScreen() {
   return (
     <>
       <Row>
         {Products.map((product) => (
-          <Col>
-            <h3>{product.name}</h3>
+          <Col key={product._id} md={3}>
+            <ProductScreen product={product} />
           </Col>
         ))}
       </Row>

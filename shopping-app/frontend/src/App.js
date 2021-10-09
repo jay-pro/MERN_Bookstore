@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "react-bootstrap";
 import "./App.css";
 import Footer from "./components/footer";
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="my-3">
         <Container>
           <h1> Kuroneko Bookstore Ecommerce Website</h1>
           <HomeScreen />

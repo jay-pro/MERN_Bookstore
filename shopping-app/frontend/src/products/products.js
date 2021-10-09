@@ -51,3 +51,5 @@ const products = [
     numReviews: 26,
   },
 ];
+
+export default products;
